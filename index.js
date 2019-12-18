@@ -101,15 +101,19 @@ Baby.prototype.play = function() {
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. this targets the object which the thing that we call is within 
-  (for some global variable it will be the window, for a method, it will be where the method is contained)
 
-  2. 
+  1. "this" targets the object which the thing that we call is within 
+  (for a global variable it will be the window, for a method inside an object container, it will be the object container)
 
-  3. 
+  2. in arrow functions "this" targets the object the container of the arrow function 
+  (the arrow function may not considered as an object ) 
 
-  4. 
-  
+  3. Whenever a function that's called with a "." before it, the object before the "." is "this"
+
+  4. When the child of a constructor is created, "this" targets the child
+
+  5. call() and apply() use this as their first argument
+
 */
 
 
